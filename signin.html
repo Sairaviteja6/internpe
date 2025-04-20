@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> SP Cart | E-commerce website</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;1,300&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" href="images/logo3.jpeg" type="image/png">
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+             <a href="index.html">  <img src="images/logo3.jpeg" alt="" width="125px"></a> 
+            </div>
+            <nav>
+                <ul id="menuitems">
+                    <li> <a href="index.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                   
+                    <li><a href="signin.html">Account</a></li>
+                </ul>
+            </nav>
+        <a href="cart.html">    <img src="images/cart.png" alt="" height="30px" width="30px"> </a> 
+            <img src="images/menu.png" class="menu-icon" alt="" onclick="menutoggle()">
+        </div>
+
+    </div>
+
+
+<!-- --------account page------ -->
+
+<div class="account-page" id="myrow">
+    <div class="container">
+        <div class="row">
+            <div class="col-2">
+                <img src="images/image1.png" alt="" width="100%">
+            </div>
+            <div class="col-2">
+              <div class="form-container">
+                  <div class="form-btn">
+                      <span onclick="login()">Login</span>
+                      <span onclick="register()">Register</span>
+                      <hr id="indicator">
+                  </div>
+                  <form action="" id="loginForm">
+                      <input type="text" placeholder="Username">
+                      <input type="password" placeholder="Password">
+                      <button type="submit" class="btn">Login</button>
+                      <a href="">Forgot password</a>
+                  </form>
+
+                  <form action="" id="regForm">
+                    <input type="text" placeholder="Username">
+                    <input type="email" placeholder="Email">
+                    <input type="password" placeholder="Password">
+                    <button type="submit" class="btn">Register</button>
+
+                </form>
+              </div>
+            </div>
+        </div>
+    </div>
+</div>
+   
+</body>
+<!--Java Script-->
+<script src="script.js"></script>
+
+</html>
